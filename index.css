@@ -1,0 +1,474 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+ html{
+         scroll-behavior: smooth;
+      }
+ 
+ body{
+   font-family: "Playwrite DE Grund", cursive;
+   font-weight: 400;
+   font-style: normal;
+ }
+ 
+ /* Section design */
+ section{
+     font-weight:bolder;
+     width: 100%;
+     height: 100vh;
+ }
+ #home{
+    background-color:  #353b48;
+ }
+ #about{
+     background-color: #44bd32;
+  }
+  #course{
+     background-color: #fbc531;
+     width: 100%;
+  }
+  #reviews{
+     background-color:#40739e;
+  }
+  #contact{
+     background-color: #e84118;
+  }
+ 
+  /* ------------------------ Home section- Header design ------------------------ */
+ 
+  #home header{
+     width: 100%;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     padding: 10px;
+     position: fixed;
+     background-color: #353b48;
+  }
+ 
+  /*  Logo  */
+ #logo{
+     font-weight: 400;
+     cursor: pointer;
+     font-size: 40px;
+     text-shadow: 0px 0px 2px white;
+     color:#f5f6fa;
+     transition: 0.5s;
+ }
+ #logo:hover{
+     color: white;
+     text-shadow: 0 0 5px #c23616,0 0 25px #c23616,0 0 50px #c23616,0 0 100px #c23616;
+     transition: 0.2s all ease-in-out 1ms;
+     transform: skewY(10deg);
+ }
+ 
+ /* NavBar */
+ #menu ol{
+     display: flex;
+ }
+ #menu ol li{
+     list-style-type: none;
+ }
+ #menu ol li a{
+     text-decoration: none;
+     font-size: larger;
+     padding: 10px;
+     color: #f5f6fa;
+ 
+    border-radius: 10px;
+ }
+ #menu ol li a:hover{
+      color: #c23616;
+      background-color: #f5f6fa;
+      transition: 0.8s all ease-in-out 0.2s ;
+ }
+ 
+ /* Button */
+ .btn{
+     display: flex;
+ }
+ .btn a{
+     text-decoration: none;
+     padding: 10px 22px 10px 22px;
+     margin: 10px;
+     color: #f5f6fa;
+     border-radius: 10px;
+    border: 1px solid white;
+ }
+ .btn a:first-child{
+     background-color: #ff6348;
+ }   
+ .btn a:first-child:hover{
+     background-color: #57606f;
+     transition: 0.5s all ease-in-out 0.2s ;
+ }
+ .btn a:last-child:hover{
+     background-color: #ff6348;
+     transition: 0.5s all ease-in-out 0.2s ;
+ }
+ 
+ /* title */
+ #title1{
+     width: 100%;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     background:linear-gradient(rgba(0, 0, 0, 0.1),rgb(0, 0, 0,0.1)),url('E:\online course\surya\src') no-repeat;
+     background-size: cover;
+     justify-content: space-evenly;
+ }
+ /* TITLE CONTENT */
+ .content{
+     color: #ffffff;
+     width: 700px;
+ }
+ .content h1,p{
+     padding: 10px;
+     margin: 20px;
+ }
+ .content h1{
+     font-size: 50px;
+     text-shadow: 0 0 5px #1e90ff,0 0 25px #1e90ff,0 0 50px #1e90ff,0 0 100px #1e90ff;
+ }
+ .content p{
+     font-size: large;
+     text-indent: 30px;
+     text-shadow:0px 0px 5px #ffffff;
+ }
+ /* TITLE logo */
+ .title_logo img{
+     width: 300px;
+     height: 300px;
+     border-radius: 10%;
+     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+     transform: skewY(20deg);
+ }
+ /* Join btn */
+ .join_btn{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .join_btn a{
+    margin: 50px;
+    text-decoration: none;
+    padding: 20px;
+    background-color: #ff6348;
+    color: #f5f6fa;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #f5f6fa;
+    font-weight: bold; 
+ }
+ .join_btn a:hover{
+     background-color: #57606f;
+     transition: 0.5s all ease-in-out;
+ }
+ 
+ /* ------------------------ About Section ------------------------ */
+ #about header{
+     width: 100%;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: flex-start;
+ }
+ .aboutbox{
+     background-color: #f5f6fa;
+     width: 380px;
+     height: 170px;
+     padding: 10px;
+     border: none;
+     border-radius: 20px;
+     box-shadow: 1px 1px 1px 1px floralwhite;
+     display: flex;
+     justify-content: space-around;
+ }
+ 
+ .abtcontent p b{
+     font-weight: bolder;
+     color: #e84118;
+ }
+ 
+ 
+ .aboutbox i{
+     font-size:20px;
+     color:red;
+     margin-top: 10px
+ }
+ #about{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-items: center;
+ }
+ #aboutfeature h1{
+      color: rgba(6, 82, 221,1.0);
+      font-size: 35px;
+      position: relative;
+      right: 100px;
+      bottom: 20px;
+ }
+ #aboutfeature p{
+     color:rgba(45, 52, 54,1.0);
+ }
+ ol{
+     color:rgba(189, 195, 199,1.5);
+ }
+ 
+ /* ------------------------ course section ------------------------ */
+ #course{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+ #course header{
+     display: flex;
+     justify-content:space-around;
+     align-items: center;
+     margin-top: 25px;
+ }
+ #course header .head{
+     font-size: 30px;
+     font-weight: bolder;
+     color: rgba(255, 255, 255,1.0);
+     text-shadow:0px 0px 5px rgba(255, 255, 255,1.0);
+ }
+ /*  search-bar */
+ .search-bar{
+     max-width: 400px;
+     display: inline-flex;
+ }
+ /* search text */
+ .search-bar input{
+     padding: 10px;
+     width: 250px;
+     font-weight:700;
+     font-size: 15px;
+     outline: none;
+     border: 1px solid #d1ccc0;
+     background-color: #d1ccc0;
+     border-radius: 5px 0px 0px 5px;
+     color: #192a56;
+ }
+ .search-bar input::placeholder{
+     color: #dcdde1;
+ }
+ .search-bar input:focus{
+     background-color: #f5f6fa;
+ }
+ /* search-btn */
+ .search-btn{
+     width: 40px;
+     outline: none;
+     border: none;
+     color: #f5f6fa;
+     background-color: #d1ccc0;
+     border-radius:0px 5px 5px 0px;
+ }
+ 
+ /* Course images */
+ .coursegalary{
+     display: flex;
+     justify-content:space-evenly;
+     align-items: center;
+     flex-wrap: wrap;
+     margin:3% 0% 0% 15%;
+     width: 70%;
+ }
+ .crsimg{
+     padding: 10px;
+ }
+ .crsimg img{
+     width: 170px;
+     height: 170px;
+     margin: 10px;
+     border-radius: 5px;
+     opacity: 0.7;
+     cursor: pointer;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ }
+ .crsimg h5{
+     margin: 2px;
+     text-align: center;
+     color: rgba(52, 73, 94,1.0);
+     font-weight: 800;
+ }
+ .crsimg img:hover{
+     opacity: 1;
+     transition: 0.5s all ease-in-out 0.2s;
+     transform: scale(1.1);
+ }
+ 
+ /* More Btn */
+ .morebtn{
+     display: flex;
+     justify-content: center;
+     margin-top: 10px;
+ }
+ .morebtn button{
+     width: 170px;
+     height: 50px;
+     color: #192a56;
+     font-size: 16px;
+     font-weight: 700;
+     border: none;
+     outline: none;
+     border-radius: 5px;
+     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+ }
+ .morebtn button:hover{
+     background-color: #192a56;
+     color: #fff200;
+     transition: 1s all ease-out 0.2s;
+ }
+ 
+ /* ------------------------ reviews section ------------------------ */
+ /* header */
+ #reviews{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-items: center;
+ }
+ #reviews header h1{
+     color:rgba(255, 242, 0,1.0);
+     text-align: center;
+     margin-top: 35px;
+ }
+ .review{
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+ }
+ .users{
+     display: flex;
+     flex-direction: column;
+     width: 350px;
+     height: 400px;
+     padding: 10px;
+     margin: 20px;
+     background-color: rgba(255, 255, 255,1.0);
+     border: none;
+     outline: none;
+     border-radius: 5px;
+     justify-content: center;
+     align-items: center;
+ }
+ .users .profile img{
+     width: 150px;
+     height: 150px;
+     border-radius: 50%;
+     border: 1px solid rgb(47, 53, 66,0.15);
+     box-shadow: rgb(47, 53, 66,0.18) 0px 2px 4px;
+ }
+ .users .content{
+     width:300px; 
+     color: #192a56;   
+ }
+ .users .name{
+     color: #4cd137;
+     padding: 5px;
+ }
+ .review :only-child{
+     padding: 5px;
+ }
+ /* star 
+ .material-symbols-outlined {
+   font-variation-settings:
+   'FILL' 0,
+   'wght' 800,
+   'GRAD' 0,
+   'opsz' 24
+ }
+ .star{
+     color:#c23616 ;
+     font-size: large;
+     padding: 10px;
+ } */
+ 
+ /* ------------------------ Contact Form ------------------------ */
+ #contact{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .cntfrm{
+     display: table;
+     padding: 20px;
+     border: none;
+     outline: none;
+     background-color: rgba(194, 54, 22,1.0);
+     border-radius: 5px;
+     border: none;
+     outline: none;
+     box-shadow: rgba(194, 54, 22,0.8) 0px 2px 4px;
+ }
+ .cntrow{
+     display: table-row;
+ }
+ .col{
+     display: table-cell;
+     padding: 10px;
+ }
+ .caption{
+     display: table-caption;
+     padding: 10px;
+     margin-bottom: 20px;
+     font-size: 40px;
+     font-weight: bolder;
+     letter-spacing: 2px;
+     color: rgba(255, 255, 255,1.0);
+ }
+ .input,textarea{
+     padding: 5px;
+     background-color: aliceblue;
+     border-radius: 5px;
+     border: none;
+     outline: none;
+     color:#353b48;
+     font-weight: bold;
+     font-size: 16px;
+     width: 300px;
+ }
+ label{
+     color: rgba(220, 221, 225,1.0);
+ }
+ .input::placeholder{
+      color: #c23616;
+ }
+ .cntbtn{
+    color: #edeef1;
+    background-color: rgba(87, 96, 111,1.0);
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-size:16px;
+    font-weight: 700px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s all ease-in 0.2s;
+    width: 100px;
+    height: 35px;
+ }
+ .cntbtn:hover{
+     background-color: #edeef1;
+     color:rgba(87, 96, 111,1.0);
+ }
+ textarea{
+     width: 300px;
+     min-height: 100px;
+ }
+ .message{
+     position: relative;
+     bottom: 50px;
+ }
